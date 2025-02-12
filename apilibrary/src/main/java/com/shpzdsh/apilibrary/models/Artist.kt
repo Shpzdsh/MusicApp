@@ -1,14 +1,27 @@
 package com.shpzdsh.apilibrary.models
 
+import com.google.gson.annotations.SerializedName
+
 data class Artist(
+
+    @SerializedName("id")
     val id: Int,
+    @SerializedName("link")
     val link: String,
+    @SerializedName("name")
     val name: String,
+    @SerializedName("picture")
     val picture: String,
-    val picture_big: String,
-    val picture_medium: String,
-    val picture_small: String,
-    val picture_xl: String,
-    val tracklist: String,
+    @SerializedName("picture_big")
+    val pictureBig: String,
+    @SerializedName("picture_medium")
+    val pictureMedium: String,
+    @SerializedName("picture_small")
+    val pictureSmall: String,
+    @SerializedName("picture_xl")
+    val pictureXl: String,
+    @SerializedName("tracklist")
+    val trackList: String,
+    @SerializedName("type")
     val type: String
 )

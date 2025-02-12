@@ -22,3 +22,7 @@ dependencyResolutionManagement {
 rootProject.name = "MusicApp"
 include(":app")
 include(":apilibrary")
+include(":chartlist")
+include(":chartlist:api")
+include(":chartlist:impl")
+include(":common")

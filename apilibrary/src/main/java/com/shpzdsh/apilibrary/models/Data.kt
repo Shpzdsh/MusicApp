@@ -11,17 +11,17 @@ data class Data(
     @SerializedName("duration")
     val duration: Int,
     @SerializedName("explicit_content_cover")
-    val explicit_content_cover: Int,
+    val explicitContentCover: Int,
     @SerializedName("explicit_content_lyrics")
-    val explicit_content_lyrics: Int,
+    val explicitContentLyrics: Int,
     @SerializedName("explicit_lyrics")
-    val explicit_lyrics: Boolean,
+    val explicitLyrics: Boolean,
     @SerializedName("id")
     val id: Long,
     @SerializedName("link")
     val link: String,
     @SerializedName("md5_image")
-    val md5_image: String,
+    val md5Image: String,
     @SerializedName("preview")
     val preview: String,
     @SerializedName("rank")
@@ -31,9 +31,9 @@ data class Data(
     @SerializedName("title")
     val title: String,
     @SerializedName("title_short")
-    val title_short: String,
+    val titleShort: String,
     @SerializedName("title_version")
-    val title_version: String,
+    val titleVersion: String,
     @SerializedName("type")
     val type: String
 )
