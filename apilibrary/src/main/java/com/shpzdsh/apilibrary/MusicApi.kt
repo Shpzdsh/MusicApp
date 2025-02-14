@@ -1,5 +1,6 @@
 package com.shpzdsh.apilibrary
 
+import com.shpzdsh.apilibrary.models.ChartResponse
 import com.shpzdsh.apilibrary.models.MusicSearchResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -9,6 +10,9 @@ import retrofit2.http.Query
 
 
 interface MusicApi {
+
+    @GET("/chart")
+    suspend fun chart() : ChartResponse
 
     @GET("/search")
     suspend fun search(@Query("q") query: String) : MusicSearchResponse
