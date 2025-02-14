@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.shpzdsh.api.databinding.MusicItemBinding
 import com.shpzdsh.apilibrary.models.Data
 
-class MusicListAdapter (private val onMusicClick: (Int) -> Unit) :
+class MusicListAdapter (private val onMusicClick: (Long) -> Unit) :
     ListAdapter<Data, MusicListAdapter.ViewHolder>(MusicItemDiffCallback()) {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder = ViewHolder(
@@ -27,7 +27,9 @@ class MusicListAdapter (private val onMusicClick: (Int) -> Unit) :
 
             fun bind(item: Data) = with(binding) {
                 musicTitle.text = item.title
-
+                binding.root.setOnClickListener{
+                    onMusicClick(item.id)
+                }
             }
         }
 }

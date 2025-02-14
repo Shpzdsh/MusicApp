@@ -1,4 +1,4 @@
-package com.shpzdsh.chartlist.impl.presentation
+package com.shpzdsh.chartlist.impl.presentation.chartlist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
