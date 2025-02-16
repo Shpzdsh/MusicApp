@@ -1,0 +1,12 @@
+com.shpzdsh.api
+id albumCoverImageView
+id artistNameTextView
+id categoryRecyclerView
+id musicImage
+id musicTitle
+id playButton
+id trackDurationTextView
+id trackTitleTextView
+layout fragment_chart_list
+layout fragment_track
+layout music_item

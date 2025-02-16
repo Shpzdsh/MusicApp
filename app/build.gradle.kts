@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.korlin.args)
 }
 
 android {
@@ -33,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,8 +46,23 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(project(":apilibrary"))
-    implementation(project(":chartlist:impl"))
+
+    implementation(libs.navigation.fragment)
+
+    implementation(libs.retrofit)
+    implementation(libs.gson.converter)
+
+    implementation(libs.koin.android)
+
+    implementation(libs.popup)
+
+    implementation(libs.coil.android)
+    implementation(libs.coil.network)
+
+    implementation(libs.exoplayer.ui)
+    implementation(libs.exoplayer.base)
+    implementation(libs.exoplayer.session)
+    implementation(libs.media)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

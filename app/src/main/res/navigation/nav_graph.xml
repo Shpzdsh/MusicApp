@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chartListFragment">
+
+    <fragment
+        android:id="@+id/chartListFragment"
+        android:name="com.shpzdsh.musicapp.presentation.chartlist.ChartListFragment"
+        android:label="ChartListFragment" >
+        <action
+            android:id="@+id/action_chartListFragment_to_trackFragment"
+            app:destination="@id/trackFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trackFragment"
+        android:name="com.shpzdsh.musicapp.presentation.track.TrackFragment"
+        android:label="TrackFragment" >
+        <argument
+            android:name="track_id"
+            app:argType="long" />
+    </fragment>
+</navigation>

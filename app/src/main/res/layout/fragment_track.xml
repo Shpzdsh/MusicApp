@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Обложка трека -->
+    <ImageView
+        android:id="@+id/trackCover"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/track_cover_description" />
+
+    <!-- Название трека -->
+    <TextView
+        android:id="@+id/trackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/track_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
+
+    <!-- Исполнитель -->
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/track_author"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Прогресс трека -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <!-- Текущее время -->
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_time"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Прогрессбар -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="100" />
+
+        <!-- Общее время -->
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Кнопки управления -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- Кнопка "Назад" -->
+        <ImageButton
+            android:id="@+id/btnPrevious"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/previous_track" />
+
+        <!-- Кнопка "Воспроизведение/Пауза" -->
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_play"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/play_pause"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Кнопка "Вперед" -->
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_next"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/next_track" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MusicApp</string>
+
+    <string name="error_header">Error</string>
+    <string name="error_description">Response ended with error. You can try reload data from page \n %s</string>
+
+    <string name="negative_popup">Close</string>
+    <string name="positive_popup">Reload data</string>
+    <string name="track_author">Author</string>
+    <string name="track_name">Track name</string>
+    <string name="track_cover_description">cover</string>
+    <string name="start_time">0:00</string>
+    <string name="previous_track">Load previous track</string>
+    <string name="play_pause">Change playing track state</string>
+    <string name="next_track">Load next track</string>
+    <string name="search_responce">Track name</string>
 </resources>

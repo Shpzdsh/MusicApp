@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.0"
+agp = "8.8.1"
 kotlin = "1.9.24"
 coreKtx = "1.15.0"
 junit = "4.13.2"
@@ -9,23 +9,30 @@ material = "1.12.0"
 activity = "1.10.0"
 constraintlayout = "2.2.0"
 
-retrofit = "2.9.0"
+retrofit = "2.10.0"
+navigation = "2.8.7"
+media = "1.7.0"
 
 kotlinx-coroutines-core = "1.10.1"
 kotlinx-serialization-json = "1.8.0"
 
-dagger  = "2.51.1"
+dagger = "2.51.1"
 
 kotlin-kapt = "2.1.10"
+koin = "3.5.3"
+popup = "1.0.3"
+coil = "3.1.0"
+exoplayer = "1.5.1"
 
-jetbrainsKotlinJvm = "1.9.24"
+jetbrainsKotlinJvm = "2.0.20"
 
-gson = "2.9.0"
+gson = "2.10.0"
 espressoCore = "3.6.1"
 legacySupportV4 = "1.0.0"
-lifecycleLivedataKtx = "2.6.1"
-lifecycleViewmodelKtx = "2.6.1"
-fragmentKtx = "1.5.6"
+lifecycleLivedataKtx = "2.8.7"
+lifecycleViewmodelKtx = "2.8.7"
+fragmentKtx = "1.8.6"
+args = "2.8.7"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,19 +45,31 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 
-gson-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "gson"}
+gson-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "gson" }
 
-kotlinx-coroutines-core = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core"}
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
 
 dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "dagger" }
-dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger"}
+dagger-hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "dagger" }
+
+navigation-fragment = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigation" }
+
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+
+popup = { module = "com.saadahmedev.popup-dialog:popup-dialog", version.ref = "popup" }
+coil-android = { module = "io.coil-kt.coil3:coil", version.ref = "coil" }
+coil-network = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
+exoplayer-base = { module = "androidx.media3:media3-exoplayer", version.ref = "exoplayer" }
+exoplayer-ui = { module = "androidx.media3:media3-ui", version.ref = "exoplayer" }
+exoplayer-session = { module = "androidx.media3:media3-session", version.ref = "exoplayer" }
+media = { module = "androidx.media:media", version.ref = "media" }
 
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
 androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
 androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
-kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx:kotlinx-coroutines-android", name = "coroutines-android", version.ref = "kotlinx-coroutines-core"}
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx:kotlinx-coroutines-android", name = "coroutines-android", version.ref = "kotlinx-coroutines-core" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -58,7 +77,6 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlinx-serialization-json = { id = "org.jetbrains.kotlinx", version.ref = "kotlinx-serialization-json" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-dagger-plugin = {id="com.google.dagger.hilt.android", version.ref = "dagger"}
-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin-kapt"}
+korlin-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "args" }
 
 
